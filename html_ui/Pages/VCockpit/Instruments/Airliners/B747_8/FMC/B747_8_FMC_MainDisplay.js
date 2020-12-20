@@ -74,6 +74,9 @@ class B747_8_FMC_MainDisplay extends Boeing_FMC {
                 this._registered = true;
             });
         });
+        Include.addScript("/JS/debug.js", function () {
+            g_modDebugMgr.AddConsole(null);
+        });
     }
     Init() {
         super.Init();
